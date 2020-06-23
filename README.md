@@ -1,27 +1,25 @@
-# AngularInterceptorPoc
+# Angular Interceptor Poc
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.1.7.
+Poc of mocking data, for fake backend
 
-## Development server
+With HttpInterceptors we can do:
+- Authentication;
+- Caching;
+- Fake backend;
+- URL transformation;
+- Modifying headers;
+- And more.
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+In this example we mock our backend for fake back-end requests
 
-## Code scaffolding
+## Run application
+- `npm install` or `yarn` for install dependencies;
+- `npm start` or `yarn start` for starting app.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
-
-## Build
-
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory. Use the `--prod` flag for a production build.
-
-## Running unit tests
-
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
-
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via [Protractor](http://www.protractortest.org/).
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI README](https://github.com/angular/angular-cli/blob/master/README.md).
+## Links to Learn more about Interceptor in Angular
+- [Interceptors Docs](https://angular.io/api/common/http/HttpInterceptor);
+- [Intro To Angular HTTP Interceptors](https://medium.com/@lanoTechno/intro-to-angular-http-interceptors-and-how-to-create-backendless-app-with-them-3593f6552b3a);
+- [Angular Http Mock Interceptor for mocked backend](https://dev.to/sanidz/angular-http-mock-interceptor-for-mocked-backend-1h5g);
+- [How to Mock a Backend in Angular using HttpInterceptor](https://blog.bitsrc.io/how-to-mock-a-backend-in-angular-using-httpinterceptor-667794d45e8d);
+- [Angular 8 - Fake Backend Example for Backendless Development](https://jasonwatmore.com/post/2020/03/10/angular-8-fake-backend-example-for-backendless-development);
+- [Angular 7 - Mock Backend Example for Backendless Development](https://jasonwatmore.com/post/2019/05/02/angular-7-mock-backend-example-for-backendless-development);

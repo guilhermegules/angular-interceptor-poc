@@ -1,0 +1,28 @@
+<section class="container mt-5" [formGroup]="userForm">
+  <input
+    type="text"
+    class="form-control"
+    placeholder="Name"
+    formControlName="name"
+  />
+  <input
+    type="number"
+    class="form-control mt-2"
+    placeholder="Age"
+    formControlName="age"
+  />
+  <input
+    type="number"
+    class="form-control mt-2"
+    placeholder="ID"
+    formControlName="id"
+  />
+  <div>
+    <button [disabled]="userForm.invalid" class="btn btn-outline-success mt-2" (click)="save()">
+      {{ title }}
+    </button>
+    <button class="btn btn-outline-info mt-2 ml-2" routerLink="/list">
+      Cancelar
+    </button>
+  </div>
+</section>

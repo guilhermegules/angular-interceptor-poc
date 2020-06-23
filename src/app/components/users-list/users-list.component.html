@@ -1,0 +1,20 @@
+<section class="container mt-5">
+  <button class="btn btn-primary mb-2" routerLink="/form">
+    Cadastrar um novo usuário
+  </button>
+  <div class="list-group" *ngFor="let user of users">
+    <div class="list-group-item list col-12">
+      <div class="col-6">
+        <p>{{ user.name }} with {{ user.age }} years old</p>
+      </div>
+      <div class="col-6">
+        <button class="btn btn-danger mr-2" (click)="removeUser(user.id)">
+          Delete
+        </button>
+        <button class="btn btn-warning" (click)="edit(user.id)">
+          Editar
+        </button>
+      </div>
+    </div>
+  </div>
+</section>
