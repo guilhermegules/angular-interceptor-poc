@@ -50,9 +50,9 @@ export class UsersFormComponent implements OnInit {
       return;
     }
 
-    this.userService.addUser(this.userForm.value).subscribe((value) => {
-      const users = JSON.parse(localStorage.getItem('users'));
-      users.push(value);
+    this.userService.addUser(this.userForm.value).subscribe(() => {
+      const users = JSON.parse(localStorage.getItem('users')) || [];
+      users.push(this.userForm.value);
       localStorage.setItem('users', JSON.stringify(users));
     });
   }
